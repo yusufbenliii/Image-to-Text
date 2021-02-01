@@ -56,7 +56,6 @@ class ScreenShootDisplay:
     def release(self, event):
         self.canvas.delete("all")
         if self.is_packed:
-            #self.clear()
             self.root.iconify()
             self.screenshot(self.start_x, self.start_y, event.x, event.y)
             self.is_packed = False
